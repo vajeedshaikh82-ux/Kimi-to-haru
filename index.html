@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home · Kimi to Haru</title>
+<meta name="description" content="Kimi to Haru — an original slice-of-life anime series about friendship, music, and a year of small memories in Hoshikawa City.">
+<meta name="theme-color" content="#F6C6D6">
+<!-- Open Graph -->
+<meta property="og:title" content="Home · Kimi to Haru">
+<meta property="og:description" content="Kimi to Haru — an original slice-of-life anime series about friendship, music, and a year of small memories in Hoshikawa City.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/hero/hero-bg.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/images/icons/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-mark jp">君と春</div>
+    <div class="loader-petal"></div>
+  </div>
+  <div id="cursor-glow"></div>
+  <canvas id="petals-canvas" aria-hidden="true"></canvas>
+
+  <nav id="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/icons/logo.svg" alt="Kimi to Haru logo">
+        <span>Kimi to Haru</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="story.html">Story</a>
+          <a href="characters.html">Characters</a>
+          <a href="world.html">World</a>
+          <a href="episodes.html">Episodes</a>
+          <a href="manga.html">Manga</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="music.html">Music</a>
+          <a href="news.html">News</a>
+          <a href="creator.html">Creator</a>
+          <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="icon-btn" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <img class="hero-bg-img" src="assets/images/hero/hero-bg.svg" alt="">
+      <div class="hero-sun"></div>
+      <div class="hero-content">
+        <div class="hero-jp">君と春</div>
+        <h1 class="hero-title">Kimi to Haru</h1>
+        <p class="hero-tagline" data-typing="Where everyday moments become cherished memories.">Where everyday moments become cherished memories.</p>
+        <div class="hero-actions">
+          <a href="music.html" class="btn">▶ Watch Trailer</a>
+          <a href="story.html" class="btn btn-primary">Explore the Story</a>
+        </div>
+      </div>
+      <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+    </section>
+
+    <section class="section">
+      <div class="container story-grid">
+        <div class="reveal">
+          <div class="eyebrow">The Story</div>
+          <h2>A quiet town, a returning spring, and a friendship worth writing songs about.</h2>
+          <p>In the seaside town of Hoshikawa, high schooler Ren Aizawa spends his days between the music room and the rooftop, until a camera-toting transfer student named Hina Tachibana wanders into his quiet routine — and asks him to help her photograph a whole year of small, ordinary miracles.</p>
+          <a href="story.html" class="btn">Read the Full Story</a>
+        </div>
+        <div class="story-art reveal-scale">
+          <img src="assets/images/hero/hero-bg.svg" alt="Ren and Hina beneath the cherry blossoms">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Cast</div>
+          <h2>Meet the Cast of Hoshikawa City</h2>
+          <p>Five classmates, one unforgettable school year.</p>
+        </div>
+        <div class="grid grid-4" id="home-char-grid"></div>
+        <div style="text-align:center;margin-top:40px;">
+          <a href="characters.html" class="btn">View All Characters</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Episodes</div>
+          <h2>Now Streaming</h2>
+        </div>
+        <div class="grid grid-3" id="home-ep-grid"></div>
+        <div style="text-align:center;margin-top:40px;">
+          <a href="episodes.html" class="btn btn-primary">Browse All Episodes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Latest</div>
+          <h2>News &amp; Announcements</h2>
+        </div>
+        <div id="home-news-list"></div>
+        <div style="text-align:center;margin-top:20px;">
+          <a href="news.html" class="btn">All News</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="nav-brand" style="color:#fff;margin-bottom:14px;">
+            <img src="assets/images/icons/logo.svg" alt="Kimi to Haru logo">
+            <span>Kimi to Haru</span>
+          </div>
+          <p style="max-width:280px;color:rgba(255,255,255,.65);">Where everyday moments become cherished memories. An original slice-of-life anime set in Hoshikawa City.</p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="world.html">World</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Experience</h5>
+          <ul>
+            <li><a href="manga.html">Manga Reader</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>About</h5>
+          <ul>
+            <li><a href="about.html">About Kimi to Haru</a></li>
+            <li><a href="creator.html">Creator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="404.html">404 Page</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Kimi to Haru · An original anime series by Abdul Vajeed Shaikh</span>
+        <span>Crafted with 🌸 in Hoshikawa City</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home-data.js"></script>
+
+</body>
+</html>

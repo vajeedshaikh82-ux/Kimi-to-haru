@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News · Kimi to Haru</title>
+<meta name="description" content="Latest news and announcements from the Kimi to Haru team.">
+<meta name="theme-color" content="#F6C6D6">
+<!-- Open Graph -->
+<meta property="og:title" content="News · Kimi to Haru">
+<meta property="og:description" content="Latest news and announcements from the Kimi to Haru team.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/hero/hero-bg.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/images/icons/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-mark jp">君と春</div>
+    <div class="loader-petal"></div>
+  </div>
+  <div id="cursor-glow"></div>
+  <canvas id="petals-canvas" aria-hidden="true"></canvas>
+
+  <nav id="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/icons/logo.svg" alt="Kimi to Haru logo">
+        <span>Kimi to Haru</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="story.html">Story</a>
+          <a href="characters.html">Characters</a>
+          <a href="world.html">World</a>
+          <a href="episodes.html">Episodes</a>
+          <a href="manga.html">Manga</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="music.html">Music</a>
+          <a href="news.html" class="active">News</a>
+          <a href="creator.html">Creator</a>
+          <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="icon-btn" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <div class="eyebrow">Updates</div>
+        <h1>News &amp; Announcements</h1>
+        <p>Everything happening in and around Kimi to Haru.</p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:40px;">
+      <div class="container" style="max-width:760px;">
+        <div id="news-list"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="nav-brand" style="color:#fff;margin-bottom:14px;">
+            <img src="assets/images/icons/logo.svg" alt="Kimi to Haru logo">
+            <span>Kimi to Haru</span>
+          </div>
+          <p style="max-width:280px;color:rgba(255,255,255,.65);">Where everyday moments become cherished memories. An original slice-of-life anime set in Hoshikawa City.</p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="world.html">World</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Experience</h5>
+          <ul>
+            <li><a href="manga.html">Manga Reader</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>About</h5>
+          <ul>
+            <li><a href="about.html">About Kimi to Haru</a></li>
+            <li><a href="creator.html">Creator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="404.html">404 Page</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Kimi to Haru · An original anime series by Abdul Vajeed Shaikh</span>
+        <span>Crafted with 🌸 in Hoshikawa City</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/news.js"></script>
+
+</body>
+</html>

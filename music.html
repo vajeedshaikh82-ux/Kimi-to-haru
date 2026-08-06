@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music · Kimi to Haru</title>
+<meta name="description" content="Listen to the opening, ending, and original soundtrack of Kimi to Haru.">
+<meta name="theme-color" content="#F6C6D6">
+<!-- Open Graph -->
+<meta property="og:title" content="Music · Kimi to Haru">
+<meta property="og:description" content="Listen to the opening, ending, and original soundtrack of Kimi to Haru.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/hero/hero-bg.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/images/icons/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-mark jp">君と春</div>
+    <div class="loader-petal"></div>
+  </div>
+  <div id="cursor-glow"></div>
+  <canvas id="petals-canvas" aria-hidden="true"></canvas>
+
+  <nav id="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/icons/logo.svg" alt="Kimi to Haru logo">
+        <span>Kimi to Haru</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="story.html">Story</a>
+          <a href="characters.html">Characters</a>
+          <a href="world.html">World</a>
+          <a href="episodes.html">Episodes</a>
+          <a href="manga.html">Manga</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="music.html" class="active">Music</a>
+          <a href="news.html">News</a>
+          <a href="creator.html">Creator</a>
+          <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="icon-btn" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <div class="eyebrow">Listen</div>
+        <h1>Music</h1>
+        <p>Opening, ending, and original soundtrack from Kimi to Haru.</p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:40px;">
+      <div class="container" style="max-width:820px;">
+        <div class="glass-card reveal" id="music-player">
+          <div class="player">
+            <div class="player-art"><img id="player-art-img" src="assets/images/episodes/ep01.svg" alt="Album art"></div>
+            <div>
+              <div class="player-track-title" id="player-track-title">Haru no Oto</div>
+              <div class="player-track-sub" id="player-track-sub">Opening Theme</div>
+              <div class="player-bars">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="player-controls">
+                <button class="icon-btn" id="play-btn" aria-label="Play">▶</button>
+                <div class="player-seek" id="player-seek"><div class="player-seek-fill" id="player-seek-fill"></div></div>
+              </div>
+              <p class="form-msg" id="player-notice" style="margin-top:10px;color:var(--text-soft);"></p>
+            </div>
+          </div>
+          <audio id="audio-el" preload="none"></audio>
+
+          <div class="track-list" style="padding:0 30px 30px;">
+            <div class="track-row" data-title="Haru no Oto" data-sub="Opening Theme" data-art="assets/images/episodes/ep01.svg" data-src="assets/audio/op-haru-no-oto.mp3">
+              <div class="t-left"><span class="t-index">01</span><span>Haru no Oto <em style="color:var(--text-soft);">(Opening)</em></span></div>
+              <span>3:42</span>
+            </div>
+            <div class="track-row" data-title="Borrowed Umbrellas" data-sub="Ending Theme" data-art="assets/images/episodes/ep03.svg" data-src="assets/audio/ed-borrowed-umbrellas.mp3">
+              <div class="t-left"><span class="t-index">02</span><span>Borrowed Umbrellas <em style="color:var(--text-soft);">(Ending)</em></span></div>
+              <span>3:15</span>
+            </div>
+            <div class="track-row" data-title="Rooftop, Late April" data-sub="Original Soundtrack" data-art="assets/images/episodes/ep04.svg" data-src="assets/audio/ost-rooftop-late-april.mp3">
+              <div class="t-left"><span class="t-index">03</span><span>Rooftop, Late April</span></div>
+              <span>2:58</span>
+            </div>
+            <div class="track-row" data-title="The Sound After Rain" data-sub="Original Soundtrack" data-art="assets/images/episodes/ep02.svg" data-src="assets/audio/ost-sound-after-rain.mp3">
+              <div class="t-left"><span class="t-index">04</span><span>The Sound After Rain</span></div>
+              <span>4:01</span>
+            </div>
+            <div class="track-row" data-title="Hoshikawa Café" data-sub="Original Soundtrack" data-art="assets/images/world/cafe.svg" data-src="assets/audio/ost-hoshikawa-cafe.mp3">
+              <div class="t-left"><span class="t-index">05</span><span>Hoshikawa Café</span></div>
+              <span>2:20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="nav-brand" style="color:#fff;margin-bottom:14px;">
+            <img src="assets/images/icons/logo.svg" alt="Kimi to Haru logo">
+            <span>Kimi to Haru</span>
+          </div>
+          <p style="max-width:280px;color:rgba(255,255,255,.65);">Where everyday moments become cherished memories. An original slice-of-life anime set in Hoshikawa City.</p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="world.html">World</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Experience</h5>
+          <ul>
+            <li><a href="manga.html">Manga Reader</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>About</h5>
+          <ul>
+            <li><a href="about.html">About Kimi to Haru</a></li>
+            <li><a href="creator.html">Creator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="404.html">404 Page</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Kimi to Haru · An original anime series by Abdul Vajeed Shaikh</span>
+        <span>Crafted with 🌸 in Hoshikawa City</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/music.js"></script>
+
+</body>
+</html>
